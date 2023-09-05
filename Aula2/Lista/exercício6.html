@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercicio 06</title>
+    </head>
+
+    <style>
+        body{
+            position: inherit;
+        
+        }
+        .divForm{
+            width: 550px;
+            height: 100px;
+            border: 1px solid gray;
+            text-align: start;
+            border-radius: 5px;
+            
+        }
+        .tituloForm{
+            position: relative;
+            margin-top: -12px;
+            margin-left: 15px;
+            background-color: white;
+            width:fit-content;
+            
+        }
+        .form{
+            position:inherit;
+            margin-left: 15px;
+            height: 25px;
+        
+        }
+    </style>
+
+    <body>
+        <h1>Formulário</h1>
+            <div class="divForm">
+                <h4 class="tituloForm">Dados pessoais</h4>
+                <form action="submit">
+                    <div class="form">
+                        <label for="Nome">Nome:</label>
+                        <input type="text">
+                    
+                    </div>
+
+                    <div class="form">
+                        <label for="Idade">Idade: </label>
+                        <input type="number">
+                    </div>
+                </form>
+            </div>
+            <br>
+            <div class="divForm">
+            
+                <h4 class="tituloForm">Dados profissionais</h4>
+            
+                <form action="submit">
+                    <div class="form">
+                        <label for="escolaridade">Escolaridade:</label>
+                        <select id="cars">
+                            <option value="Medio">Ensino Médio</option>
+                            <option value="Superior">Ensino Superior</option>
+                            <option value="Pos">Pós Graduação</option>
+                            <option value="Doutorado">Doutorado</option>
+                            <option value="Metre">Mestrado</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label for="atuacao">Área de atuação:</label>
+                        <input type="radio" name="Area">
+                        <label for="">Gerência</label>
+                        <input type="radio" name="Area">
+                        <label for="">Financeiro</label>
+                        <input type="radio" name="Area">
+                        <label for="">Recepção</label>
+                    </div>
+                </form>
+            </div>
+    </body>
+
+</html>

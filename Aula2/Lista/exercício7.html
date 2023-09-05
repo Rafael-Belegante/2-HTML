@@ -1,0 +1,155 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+    </head>
+    
+    <style>
+        body{
+            position: absolute;
+            margin-left: 15px;
+        }
+
+        .divForm{
+            display: flex;
+            border: 1px solid gray;
+            align-items: flex-start;
+            border-radius: 5px;
+            flex-direction:column;
+            align-content: flex-start;
+            margin-bottom: 15px;
+            width: 700px;
+        }
+
+        .tituloForm{
+            position: relative;
+            margin-top: -12px;
+            margin-left: 15px;
+            background-color: white;
+            width:fit-content;  
+        }
+        .form{
+            position: relative;
+            margin-left: 15px;   
+            text-align: end;
+        }
+        
+        .textArea{
+            position: inherit;
+            width: 70%;
+            height: 100px;
+            padding: 10px;
+        }
+
+        .campos{
+            position: inherit;
+            width: 300px;
+            margin-bottom: 3px;  
+        }
+    
+    
+    </style>
+    
+    <body>
+        <h1>Formulário</h1>
+            <div class="divForm">
+                <h4 class="tituloForm">Dados pessoais</h4>
+                <form action="submit">
+                
+                    <div class="form">
+                        <label for="name">Nome:</label>
+                        <input type="text" class="campos">            
+                    </div>
+
+                    <div class="form">
+                        <label for="age">Endereço: </label>
+                        <input type="text" class="campos">
+                    </div>
+
+                    <div class="form">
+                        <label for="city">Cidade:</label>
+                        <input type="text" class="campos">
+                    </div>
+                        <div class="form">
+                            <label for="name">Estado:</label>
+                            <select id="state" class="campos">
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="AP">Amapa</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espirito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Para</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>                    
+                            </select>
+                        </div>
+                
+                </form>
+            </div>
+            <br>
+            
+            
+            <div class="divForm">
+            
+                <h4 class="tituloForm">Dados profissionais</h4>
+            
+                <form action="submit">
+                    <label class="form">Natureza do Cargo</label>
+                    <div class="form">
+                        <input type="radio" name="Cargo">
+                        <label>Gerência</label>
+                        <input type="radio" name="Cargo">
+                        <label>Financeiro</label>
+                        <input type="radio" name="Cargo">
+                        <label>Recepção</label>
+                        <input type="radio" name="Cargo">
+                        <label>Jurídico</label>
+                    </div>
+                    <br>
+
+                    <label class="form">Área de interesse</label>
+                    <div class="form">
+                        <input type="checkbox">
+                        <label>Computação</label>
+                        <input type="checkbox">
+                        <label>Biologia</label>
+                        <input type="checkbox">
+                        <label>Meio Ambiente</label>
+                        <input type="checkbox">
+                        <label>Engenharia</label>
+                        <input type="checkbox">
+                        <label>História</label>
+                        
+                    </div>
+                    <div>
+                        <label for="curriculo" class="tituloForm">Mini-Curriculo:</label>
+                        <textarea placeholder="Conte-nos um pouco sobre você" class="textArea"></textarea>            
+                    
+                    </div>
+                    <br>
+                </form>
+                
+            </div>
+        </body>
+
+</html>
