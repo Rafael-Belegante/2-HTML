@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Calculadora
+        </title>
+        <style>
+            #unir {
+                font-size: 20px;
+                text-align: center;
+            }
+            .botoes {
+                font-size: 30px;
+                margin: 15px;
+                padding: 20px;
+                text-align: center;
+            }
+            #resultado {
+                font-size: 30px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <input type="number" id="numero1" placeholder="Digite um número">
+        <br>
+        <input type="number" id="numero2" placeholder="Digite outro número">
+        <br><br>
+        
+        <button onclick="somar()" class="botoes" id="calculadora">+</button>
+        <button onclick="subtrair()" class="botoes" id="calculadora">-</button>
+        <br>
+        <button onclick="multiplicar()" class="botoes" id="calculadora">*</button>
+        <button onclick="dividir()" class="botoes" id="calculadora">/</button>
+
+        <div id="resultado"></div>
+        <script src="./script.js"></script>
+    </body>
+</html>
